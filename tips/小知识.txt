@@ -1,0 +1,8 @@
+1.调节屏幕大小
+	#var a=DisplayServer.get_window_list()
+	#var b=Vector2i(1800,1000)
+	#DisplayServer.window_set_size(b,a[0])
+
+2.获得单个瓦片全局坐标
+	var global_pos = to_global(map_to_local(tile_pos)) +\
+		Vector2(get_viewport().get_window().position)

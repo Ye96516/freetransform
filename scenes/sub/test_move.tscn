@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bpokndayk25ct"]
+
+[ext_resource type="Script" path="res://scenes/sub/test_move.gd" id="1_7d663"]
+[ext_resource type="Texture2D" uid="uid://bfdbcb0a5s0wu" path="res://icon.svg" id="2_16btk"]
+[ext_resource type="Script" path="res://scenes/sub/icon.gd" id="3_1ciyk"]
+
+[node name="TestMove" type="Window"]
+position = Vector2i(200, 200)
+size = Vector2i(500, 500)
+script = ExtResource("1_7d663")
+
+[node name="Icon" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(200, 200)
+texture = ExtResource("2_16btk")
+script = ExtResource("3_1ciyk")
